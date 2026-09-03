@@ -1,0 +1,7 @@
+{
+    "threshold": 0.67,
+    "selection_partition": "validation",
+    "selection_metric": "macro_f1",
+    "selection_method": "Validation-only threshold search after development-stage PA1 selection",
+    "model": "PA1"
+}

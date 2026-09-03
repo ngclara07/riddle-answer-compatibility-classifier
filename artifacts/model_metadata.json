@@ -1,0 +1,48 @@
+{
+    "task": "Binary riddle-answer compatibility classification",
+    "selected_experiment": "PA1",
+    "model_type": "TensorFlow Sequential Dense neural network",
+    "hidden_layers": [
+        128,
+        64
+    ],
+    "dropout": 0.5,
+    "l2_strength": 0.0,
+    "learning_rate": 0.0005,
+    "batch_size": 32,
+    "epochs": 50,
+    "early_stopping": false,
+    "input_dimension": 22674,
+    "decision_threshold": 0.67,
+    "threshold_selection_metric": "validation macro-F1",
+    "feature_representation": "22,674-dimensional pair-aware representation combining word/character TF-IDF, separate riddle TF-IDF, separate answer TF-IDF, lexical and character overlap, structural features, length features, and TF-IDF cosine similarity",
+    "numeric_feature_names": [
+        "word_jaccard",
+        "answer_word_coverage",
+        "riddle_word_coverage",
+        "char_trigram_jaccard",
+        "riddle_word_count",
+        "answer_word_count",
+        "riddle_char_count",
+        "answer_char_count",
+        "answer_to_riddle_word_ratio",
+        "answer_to_riddle_char_ratio",
+        "riddle_has_question_mark",
+        "answer_has_question_mark",
+        "answer_is_single_word",
+        "tfidf_cosine_similarity"
+    ],
+    "final_test_results": {
+        "model": "PA1: Final held-out test evaluation",
+        "accuracy": 0.6650326797385621,
+        "balanced_accuracy": 0.6650326797385621,
+        "precision": 0.6666666666666666,
+        "recall": 0.6601307189542484,
+        "f1_score": 0.6633825944170771,
+        "macro_f1": 0.6650246305418719
+    },
+    "tensorflow_version": "2.21.0",
+    "scikit_learn_version": "1.7.2",
+    "scipy_version": "1.16.3",
+    "export_timestamp": "2026-08-28 16:53:01"
+}
